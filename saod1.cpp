@@ -19,7 +19,7 @@ int main()
   while(k!=0)
   {
     cout<<"1. Добавить элемент в стек"<<endl;
-    //cout<<"2. Вывести очередь на экран"<<endl;
+    cout<<"2. Вывести стек на экран"<<endl;
     cout<<"3. Забрать элемент из стека"<<endl;
     cout<<"4. Выйти из программы"<<endl;
     cin>>a;
@@ -31,19 +31,9 @@ int main()
         int *s1 = new int[num];
         for(int i = 1;i<num;i++)
           s1[i]=s[i-1];
-        for(int i = 0;i<num;i++)
-        {
-          cout<<s1[i]<<", ";
-        }
-        cout<<endl;
         cout<<"Введите значение"<<endl;
         cin>>a;
-        s1[0]=a; // ?????
-        for(int i = 0;i<num;i++)
-        {
-          cout<<s1[i]<<", ";
-        }
-        cout<<endl;
+        s1[0]=a;
         delete [] s;
         int *s = new int[num];
         for(int i =0;i<num;i++)
@@ -51,24 +41,20 @@ int main()
         delete [] s1;
         break;
       }
-      // case 2:
-      // {
-      //   for(int i=0;i<num;i++)
-      //     cout<<s[i]<<", ";
-      //   cout<<endl;
-      //   break;
-      // }
+      case 2:
+      {
+        for(int i=0;i<num;i++)
+          cout<<s[i]<<", ";
+        cout<<endl;
+        break;
+      }
       case 3:
       {
         num--;
         int *s1 = new int[num];
         cout<<s[0]<<endl;
         for(int i =1;i<num+1;i++)
-        {
           s1[i-1]=s[i];
-          cout<<s1[i-1]<<", ";
-        }
-        cout<<endl;
         delete [] s;
         int *s = new int[num];
         for(int i =0;i<num;i++)
