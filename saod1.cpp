@@ -52,7 +52,7 @@ int main()
       {
         num--;
         int *s1 = new int[num];
-        cout<<s[0]<<endl;
+        //cout<<s[0]<<endl;
         for(int i =1;i<num+1;i++)
           s1[i-1]=s[i];
         delete [] s;
