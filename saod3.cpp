@@ -5,10 +5,15 @@ using namespace std;
 int main()
 {
   list l;
-  cout<<"Введите число, которое хотите добавить в список"<<endl;
-  int a,k;
-  cin>>a;
-  l.back(a);
+  int a,k,num;
+  cout<<"Сколько чисел вы хотите добавить в список"<<endl;
+  cin>>num;
+  cout<<"Введите числа, которое хотите добавить в список"<<endl;
+  for(int i=0;i<num;i++)
+  {
+    cin>>a;
+    l.back(a);
+  }
   while(k!=0)
   {
     cout<<"Что хотите сделать со списком"<<endl;

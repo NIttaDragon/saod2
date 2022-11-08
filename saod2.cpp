@@ -8,11 +8,11 @@ int main()
   cin>>num;
   int *q = new int[num];
   cout<<"Введите очередь"<<endl;
-  for (int i=0;i<num;h++)
+  for (int i=0;i<num;i++)
   {
     int a;
     cin>>a;
-    q[h] = a;
+    q[i] = a;
   }
   int k=1;
   cout<<"Что хотите сделать с очередью"<<endl;
